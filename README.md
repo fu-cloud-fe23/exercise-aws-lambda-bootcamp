@@ -92,3 +92,34 @@ Vid PUT ska följande returneras:
 ```
 
 Lösenordet som genereras måste vara minst 8 tecken långt.
+
+## AWS CLI - Koda API lokalt
+Koda upp ett todo-api lokalt på din dator, och använd ditt AWS CLI för att zippa och deploya dina filer.
+API:et skall innehålla en array av objekt som ser ut enligt följande:
+```
+{
+    id : 1,
+    task : 'Hitta pengar',
+    done : false
+}
+```
+Skapa upp funktionalitet för att utföra de fyra vanligaste HTTP-metoderna (GET, POST, PUT, DELETE).
+
+### Basic
+
+#### GET
+Genom ett GET-anrop skall man kunna hämta alla todouppgifter i arrayen.
+
+#### POST
+Genom ett POST-anrop där du skickar med ett nytt objekt i eventets body skall du lägga till den nya todon i arrayen.
+
+### Level Up
+
+#### GET
+Använd dig av query parametrar för att hämta en specifik todo.
+
+#### PUT
+Genom ett PUT-anrop där du anger vilken todo som skall uppdateras i en query parameter, så skall den angivna todon toggla "done".
+
+#### DELETE
+Genom ett DELETE-anrop där du anger vilken todo som skall tas bort i en query parameter, så skall den angivna todon raderas.
